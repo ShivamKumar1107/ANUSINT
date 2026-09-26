@@ -1,6 +1,6 @@
 # ANUSINT
 
-**A**utomated **N**etwork **U**sername & **S**ocial **I**ntelligence
+**A**utomated **N**etwork **U**sername **S**poofing **I**nvestigation &
 **N**otification **T**ool
 
 [![Tests](https://github.com/YOUR-USERNAME/anusint/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR-USERNAME/anusint/actions/workflows/tests.yml)

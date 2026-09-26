@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-ANUSINT (Automated Network Username & Social Intelligence Notification
-Tool) — a small OSINT toolkit for spotting impersonation, built on
+ANUSINT (Automated Network Username Spoofing Investigation &
+Notification Tool) — a small OSINT toolkit for spotting impersonation, built on
 publicly accessible data only (no login, no auth-wall bypass, no bulk
 scraping). See README.md for full setup and legal/ethical scope.
 
