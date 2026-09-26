@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
+
+# Tool output (results people generate while using it — not source)
+*_results.json
+*_results.csv
+snapshots.json
+snapshots.csv
+*_report.json
+*_report.csv
+
+# Local env/config
+.env
