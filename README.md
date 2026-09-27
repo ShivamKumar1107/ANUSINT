@@ -3,7 +3,7 @@
 **A**utomated **N**etwork **U**sername & **S**ocial **I**mpersonation
 **N**otification **T**ool
 
-[![Tests](https://github.com/YOUR-USERNAME/anusint/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR-USERNAME/anusint/actions/workflows/tests.yml)
+[![Tests](https://github.com/ShivamKumar1107/anusint/actions/workflows/tests.yml/badge.svg)](https://github.com/ShivamKumar1107/anusint/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
 
@@ -11,7 +11,6 @@ A small, dependency-light toolkit for **brand/account owners** to find
 and evidence impersonation accounts. It only uses publicly accessible
 data — no login, no scraping past auth walls, no bulk harvesting.
 
-> Replace `YOUR-USERNAME` above and in `pyproject.toml` with your actual
 > GitHub username/org once you've created the repo.
 
 ```
@@ -37,7 +36,7 @@ you@machine:~/anusint$ python3 main.py compare mybrand mybrand_official
 Requires Python 3.9+.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/anusint.git
+git clone https://github.com/ShivamKumar1107/anusint.git
 cd anusint
 
 python3 -m venv venv
