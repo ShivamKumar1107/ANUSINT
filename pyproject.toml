@@ -1,33 +1,25 @@
-[build-system]
-requires = ["setuptools>=68"]
-build-backend = "setuptools.build_meta"
+import click
+from rich.console import Console
+from anusint.net import fetch_profile_data
 
-[project]
-name = "anusint"
-version = "1.0.0"
-description = "ANUSINT (Automated Network Username & Social Impersonation Notification Tool) - a public-data-only OSINT toolkit for spotting social media impersonation"
-readme = "README.md"
-license = { text = "MIT" }
-requires-python = ">=3.9"
-dependencies = [
-    "requests>=2.31",
-    "Pillow>=10.0",
-]
+console = Console()
 
-[project.urls]
-Homepage = "https://github.com/ShivamKumar1107/anusint"
-Issues = "https://github.com/ShivamKumar1107/anusint/issues"
+@click.group()
+def cli():
+    """ANUSINT: Advanced Anti-Impersonation Analysis Tool"""
+    pass
 
-[project.scripts]
-anusint = "main:main"
+@cli.command()
+@click.argument('username')
+def snapshot(username):
+    """Capture and analyze a profile snapshot."""
+    with console.status(f"[bold cyan]Querying data for @{username}...[/bold cyan]", spinner="dots"):
+        try:
+            data = fetch_profile_data(username)
+            console.print(f"[bold green]✓ Snapshot successful for @{username}[/bold green]")
+            # Future integration: Pass 'data' to profile_snapshot.py for deep analysis
+        except Exception as e:
+            console.print(f"[bold red]Error:[/bold red] {str(e)}")
 
-[tool.setuptools]
-py-modules = [
-    "main",
-    "config",
-    "net",
-    "export",
-    "username_checker",
-    "profile_snapshot",
-    "impersonation_check",
-]
+if __name__ == '__main__':
+    cli()
