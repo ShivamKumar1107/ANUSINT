@@ -15,8 +15,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR-USERNAME/anusint"
-Issues = "https://github.com/YOUR-USERNAME/anusint/issues"
+Homepage = "https://github.com/ShivamKumar1107/anusint"
+Issues = "https://github.com/ShivamKumar1107/anusint/issues"
 
 [project.scripts]
 anusint = "main:main"
