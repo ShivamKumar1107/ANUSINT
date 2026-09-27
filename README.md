@@ -12,10 +12,12 @@ A powerful, CLI-driven OSINT tool designed to bypass strict rate limits, securel
 ## Installation
 
 ```bash
-git clone [https://github.com/ShivamKumar1107/anusint.git](https://github.com/ShivamKumar1107/anusint.git)
+git clone https://github.com/ShivamKumar1107/anusint.git
 cd anusint
 
+# Create and activate a fresh virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 
+# Install the tool globally within this environment using the new pyproject.toml
 pip install -e .
