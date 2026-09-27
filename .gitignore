@@ -1,28 +1,23 @@
-# Python
+# Python caches and bytecode
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
 *.egg-info/
 build/
 dist/
 
-# Virtual environments
+# Virtual Environments
 venv/
 .venv/
 env/
+.env
 
-# Editor/OS cruft
+# Project specific files (Do not push local data)
+reports/
+*.db
+.anusint/
+
+# OS and Editor files
+.DS_Store
 .vscode/
 .idea/
-.DS_Store
-
-# Tool output (results people generate while using it — not source)
-*_results.json
-*_results.csv
-snapshots.json
-snapshots.csv
-*_report.json
-*_report.csv
-
-# Local env/config
-.env
