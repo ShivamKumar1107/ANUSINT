@@ -24,7 +24,7 @@ use case before writing code.
 ## Setting up a dev environment
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/anusint.git
+git clone https://github.com/ShivamKumar1107/anusint.git
 cd anusint
 python3 -m venv venv
 source venv/bin/activate
